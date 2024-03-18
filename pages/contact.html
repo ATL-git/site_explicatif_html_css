@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Nunito:wght@200&family=Poppins:wght@100;200;300;600;900&display=swap"
+        rel="stylesheet">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html"> Accueil</a></li>
+                <li><a href="/pages/page1.html"> HTML et CSS </a></li>
+                <li><a href="/pages/page2JS.html"> JavaScript</a></li>
+                <li><a href="/page3PHP.html">PHP</a></li>
+                <li><a href="/pages/contact.html">Nous Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="form_container">
+            <h1> Contact</h1>
+            <div class="contact_form_container">
+                <fieldset class="formulaire">
+                    <legend class="leg">Prenez contact avec nous </legend>
+                    <form method="get" action="/pages/fenetrex.html">
+                        <div>
+                            <label for="prenom"> <strong>prénom :</strong> </label>
+                            <input type="text" id="prenom" placeholder="ex.: aurélien" size="30" maxlength="20">
+                        </div>
+                        <div>
+                            <label for="nom"><strong>nom :</strong> </label>
+                            <input type="text" id="nom" placeholder="ex.: maureau" size="30" maxlength="20">
+                        </div>
+
+
+                        <div>
+                            <span><strong>genre :</strong></span>
+                            <input type="radio" value="masculin" id="masculin" name="genre"> <label for="masculin">
+                                masculin</label>
+                            <input type="radio" name="genre" value="feminin" id="feminin"> <label
+                                for="feminin">feminin</label>
+                        </div>
+                        <div>
+                            <label for="doc"><strong>Je désire recevoir un magazine explicatif :</strong></label>
+                            <input type="checkbox" id="doc" name="doc">
+                        </div>
+                        <div>
+                            <label for="comment"><strong>Votre avis nous interesse , la parole est à vous :</strong>
+                            </label><br>
+                            <textarea cols="60" rows="8" id="comment"></textarea>
+
+                        </div>
+                      <div class="button_container">
+                            <input type="submit" value="envoyer">
+                           
+                        </div>
+                    </form>
+                </fieldset>
+                <div class="image_form">
+                    <img src="/assets/image/bonhome_ecrit.jpg" alt="bonhomme qui ecrit">
+                </div>
+            </div>
+
+            <div class="border"></div>
+            <div class="contact_contact_container">
+                <fieldset class="contact_container">
+                    <legend class="leg"> Nous trouver</legend>
+                    <article class="adresse">
+                        <h3> ATL Web</h3>
+                        <p>55 Rue du dirigeable<br>
+                            13400 Aubagne</p>
+                    </article>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.4539220498086!2d5.6057142!3d43.283814899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9a39dcf36e0cb%3A0x15a99bf256f4a7ef!2s55%20Rue%20du%20Dirigeable%2C%2013400%20Aubagne!5e0!3m2!1sen!2sfr!4v1706698321930!5m2!1sen!2sfr"
+                            style="border:1px solid grey;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <article class="telephone">
+                        <h3>TELEPHONE</h3>
+                        <a href="tel:+33603444164">06 62 45 41 94</a>
+                    </article>
+                    <article class="reseaux_sociaux">
+                        <h3>Réseaux Sociaux</h3>
+                        <nav>
+                            <ul class=" link-footer">
+                                <li><a href="https://www.facebook.com/"><img
+                                            src="/assets/image/facebook.png" alt="facebook"></a></li>
+                                <li><a href="https://www.instagram.com/"><img
+                                            src="/assets/image/instagram.png" alt="instagram"></a>
+                                </li>
+                                <li><a href="https://twitter.com/?lang=fr"><img
+                                            src="/assets/image/twitter.png" alt="twitter"></a>
+                                </li>
+                            </ul>
+
+                        </nav>
+
+                    </article>
+
+                </fieldset>
+                <div class="image_bonhomme_cherche">
+                    <img src="/assets/image/bonhomme_verifie.jpg" alt="bonhomme qui cherche">
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div>
+            <h3>CopyRight ATL</h3>
+            <p>tous droit reserver</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

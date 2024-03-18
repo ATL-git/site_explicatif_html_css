@@ -1,0 +1,221 @@
+* {
+
+
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header {
+    background: linear-gradient(45deg, #009999, #00ffff);
+    height: 80px;
+
+}
+
+header nav ul {
+    display: flex;
+    gap: 80px;
+    list-style-type: none;
+    padding-left: 100px;
+    font-weight: bold;
+    font-family: 'Nunito Sans 300 ', sans-serif;
+    font-size: 15px;
+
+
+
+}
+
+header nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: white;
+    display: block;
+
+}
+
+header nav ul li a:hover {
+
+    filter: drop-shadow(-3px 4px 11px #eeeef1);
+    transform: scale(1.2);
+}
+
+footer {
+    height: 80px;
+    background: linear-gradient(45deg, #009999, #00ffff);
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+footer div {
+
+
+    color: white;
+}
+
+h1 {
+
+    text-align: center;
+    padding: 60px;
+    padding-bottom: 100px;
+    font-size: 25px;
+
+}
+
+.js_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.js_container figure img {
+    width: 450px;
+}
+
+.text_js {
+    width: 500px;
+    text-align: center;
+    align-items: center;
+    line-height: 25px;
+
+}
+
+.text_js h2 {
+    padding-bottom: 40px;
+}
+
+.video_js video {
+
+    width: 600px;
+    margin: auto;
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(45deg, #0e0f0f, #cdd3d3);
+    border-image-slice: 1;
+    transition: all ease 0.8s;
+}
+
+.video_js h2 {
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+
+
+figcaption {
+    background-color: #009999;
+    color: black;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+    padding: 0px;
+
+}
+
+.image_js {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width :768px) {
+
+    * {
+        flex-direction: column;
+        justify-content: center;
+
+
+
+    }
+
+
+    header {
+        height: auto;
+    }
+
+    header nav ul {
+        padding: 0px;
+        gap: 0px;
+        text-align: center;
+        margin: 0px;
+    }
+
+
+    header nav ul li {
+
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .js_container h2 {
+        width: 100%;
+    }
+
+
+    .js_container {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .text_js {
+        width: 70%;
+    }
+
+    .image_js img {
+        width: 100%;
+    }
+
+    .image_js figcaption {
+        width: 100%;
+    }
+
+    .image_js {
+        width: 70%;
+    }
+
+    .js_container figure img {
+        width: 100%;
+    }
+
+    .video_js video {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+
+    .video_js {
+        width: 70%;
+        align-items: center;
+        margin: auto;
+    }
+}
+
+@media (min-width :768px) {
+
+    .video_js video:hover {
+
+        transform: scale(1.5);
+
+    }
+}

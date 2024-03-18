@@ -1,0 +1,309 @@
+* {
+
+
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header {
+    background: linear-gradient(45deg, #009999, #00ffff);
+    height: 80px;
+
+}
+
+header nav ul {
+    display: flex;
+    gap: 80px;
+    list-style-type: none;
+    padding-left: 100px;
+    font-weight: bold;
+    font-family: 'Nunito Sans 300 ', sans-serif;
+    font-size: 15px;
+
+
+
+}
+
+header nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: white;
+    display: block;
+
+}
+
+header nav ul li a:hover {
+
+    filter: drop-shadow(-3px 4px 11px #eeeef1);
+    transform: scale(1.2);
+}
+
+footer {
+    height: 80px;
+    background: linear-gradient(45deg, #009999, #00ffff);
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+footer div {
+
+
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    padding: 60px;
+    padding-bottom: 100px;
+    font-size: 25px;
+}
+
+.formulaire {
+    width: 500px;
+    line-height: 40px;
+
+}
+
+.formulaire form {
+    text-align: center;
+}
+
+.contact_container {
+    width: 500px;
+
+}
+
+.reseaux_sociaux img {
+    width: 40px;
+}
+
+.reseaux_sociaux ul {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+.reseaux_sociaux ul li {
+    list-style-type: none;
+
+}
+
+.contact_container article {
+    text-align: center;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+
+}
+
+.map {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+}
+
+.leg {
+    font-weight: bold;
+}
+
+.contact_container h3 {
+
+    margin: 30px;
+}
+
+.contact_container p {
+
+    margin: 30px;
+}
+
+.border {
+    width: 900px;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(45deg, #009999, #00ffff);
+    border-image-slice: 1;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.image_form img {
+    width: 100%;
+}
+
+.image_form {
+    width: 400px;
+
+}
+
+.contact_form_container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.contact_contact_container {
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.image_bonhomme_cherche img {
+    width: 100%;
+}
+
+.image_bonhomme_cherche {
+    width: 400px;
+}
+
+#prenom {
+    margin-top: 40px;
+}
+
+.envoi_efface {
+    margin: 30px;
+}
+
+.button_container {
+
+    margin: 30px;
+}
+
+#prenom,
+#nom {
+    padding: 3px;
+    border: 1px solid #009999;
+    border-radius: 5px;
+    width: 200px;
+    box-shadow: 1px 1px 1px #047777 inset;
+}
+
+input[type=submit] {
+
+    padding: 10px;
+    border: 1px solid #009999;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px #047777;
+    cursor: pointer;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+
+@media (max-width :768px) {
+
+    * {
+        flex-direction: column;
+        justify-content: center;
+
+
+
+    }
+
+
+
+    header {
+        height: auto;
+    }
+
+    header nav ul {
+        padding: 0px;
+        gap: 0px;
+        text-align: center;
+    }
+
+
+    header nav ul li {
+
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .formulaire {
+        align-items: center;
+        width: 80%;
+    }
+
+    .contact_form_container {
+        align-items: center;
+
+    }
+
+    .image_form {
+        display: none;
+    }
+
+    .image_bonhomme_cherche {
+        display: none;
+    }
+
+    .formulaire input {
+        width: 100%;
+    }
+
+    .border {
+        width: 60%;
+    }
+
+    .button_container {
+        width: 20%;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .button_container input {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+        align-items: center;
+
+
+
+    }
+
+    #comment {
+        width: 80%;
+    }
+
+    .contact_container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .map iframe {
+        width: 100%;
+    }
+
+    .map {
+        width: 80%;
+    }
+
+}
